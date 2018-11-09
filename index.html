@@ -1,0 +1,111 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title> Happy Birthday!!!</title>
+		<link rel="stylesheet" type="text/css" href="styles/tasks.css" media="screen" />
+		<link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet"/>
+		<!--  		<script>
+			const NAME = "once";
+			window.onload= function myFunction(){
+				if (this.name !== NAME) {
+				  this.name = NAME;
+				  //splashScreen();
+				} else {
+					var elem = document.getElementById("text"); 
+					var pos = -900;
+					var id = setInterval(frame, 5);
+					function frame() {
+						if (pos >= 550) {
+							clearInterval(id);
+							var id = switch1();
+						} else {
+							pos= pos + 1; 
+							elem.style.top = pos + 'px';
+						}
+					}
+					console.log(this.name)
+				}
+			}
+			function switch1(){
+				alert("1");
+				var elem = document.getElementById("block"); 
+				var html_to_insert = "<p>New paragraph</p>";
+				const main = document.getElementById('main');
+				alert("2");
+				main.replaceChild(html_to_insert, elem);
+				alert("3");
+			}
+		</script> -->
+	</head>
+		
+	<body>
+		<header>
+			<span></span>	
+		</header>	
+		<main>
+			<svg width=100% height=100%>
+				<!--<rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:100%;stroke:rgb(0,0,0)" />-->
+			</svg>
+			<div id="block" top = 100px>
+				<p id="text">
+					Happy Birthday! As you can see, my gift to you is this website. The name of this website is kailoowhadi.org; And you can show off the website from wherever you are. You can brag about the domain, put your resume on it, or even start your own buisness on it. This server wll stay online for two more years so you might as well customize it. No? Do you remember the inspect element hack we used to do by pressing right-click on a website? Well, its sorta like that. You can try changing the file's elements by double clicking on them. Once you got it figured out, come to me so that I can turn the page over to you, so that you'll be able to ACTUALLY change the content of this website. If it seems even more intreging, I have a book on how to build your own interactive website, or you can use sololearn.
+					<br><br><br><br> <br><br> <br><br> <br><br> <br>
+					Happy Birthday To You<br> <br><br> <br><br> <br>
+					Happy Birthday Dear <span id="name"> Kailo 
+					</span><br> <br><br> <br><br> <br>
+					Happy Birthday To You<br> <br><br> <br><br> <br>
+					Happy Birthday To You
+				</p>
+			</div>
+			<section></section>
+		</main>
+		<footer></footer>
+		<script>
+var elem = document.getElementById("text"); 
+var pos = -5800;
+var down = true;
+var id = setInterval(frame, 10);
+function frame() {
+	if(down){
+		if (pos >= 500) {
+			down=false;
+		} else {
+			if(pos>= -3000){
+				pos= pos + 10; 
+			}
+			else{
+				pos= pos+1;
+			}
+			elem.style.top = pos + 'px';
+		}
+	}
+	else{
+		if (pos <= -1800) {
+			clearInterval(id);
+		} else {
+			pos= pos-0.5;
+			elem.style.top = pos + 'px';
+		}
+	}
+}
+/*
+function switch1(){
+	alert("1");
+	var elem = document.getElementById("block"); 
+	const anotherTodo = document.createElement('p');
+	anotherTodo.textContent  = "Happy Birthday! As you can see, my gift to you is this website. The name of this website is kailoowhadi.org; And you can show off the website from wherever you are. You can brag about the domain, put your resume on it, or even start your own buisness on it. This server wll stay online for two more years so you might as well customize it. No? Do you remember the inspect element hack we used to do by pressing right-click on a website? Well, its sorta like that. You can try changing the file's elements by double clicking on them. Once you got it figured out, come to me so that I can turn the page over to you, so that you'll be able to ACTUALLY change the content of this website. If it seems even more intreging, I have a book on how to build your own interactive website, or you can use sololearn.";
+	const main = document.getElementById('main');
+	alert("2");
+	elem.remove();
+	alert("3");
+	//main.insertBefore(anotherTodo, document.getElementById('section'));
+	alert("4");
+}*/
+		</script>
+	</body>
+</html>
